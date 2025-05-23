@@ -1,11 +1,26 @@
-import Image from "next/image";
+"use client"
+import Navbar from "@/components/Navbar/Navbar";
+import HeroSection from "@/app/components/HeroSection";
+import Category from "@/app/components/Category";
+import Shop from "@/app/components/Shop";
+import WhyChooseUs from "@/app/components/WhyUs";
+import Join from "@/app/components/Join";
+import Footer from "@/components/Footer/Footer";
+import Products from "@/app/components/Product";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        Project baseline
-      </main>
-    </div>
-  );
+    return (
+        <div className="flex min-h-screen flex-col bg-gradient-to-br from-white via-white to-rose-50 px-4">
+            <Navbar/>
+            <main>
+                <HeroSection/>
+                <Category/>
+                <Shop/>
+                <Products/>
+                <WhyChooseUs/>
+                <Join/>
+            </main>
+            <Footer/>
+        </div>
+    );
 }
