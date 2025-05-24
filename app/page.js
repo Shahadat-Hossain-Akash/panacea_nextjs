@@ -1,5 +1,4 @@
 "use client"
-import Navbar from "@/components/Navbar/Navbar";
 import HeroSection from "@/app/components/HeroSection";
 import Category from "@/app/components/Category";
 import Shop from "@/app/components/Shop";
@@ -10,8 +9,8 @@ import Products from "@/app/components/Product";
 
 export default function Home() {
     return (
-        <div className="flex min-h-screen flex-col bg-gradient-to-br from-white via-white to-rose-50 px-4">
-            <Navbar/>
+        <div className="flex min-h-screen flex-col">
+
             <main>
                 <HeroSection/>
                 <Category/>

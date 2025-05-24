@@ -1,6 +1,7 @@
 import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
 import ScrollButton from "@/components/shared/ScrollButton";
+import Navbar from "@/components/Navbar/Navbar";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -21,8 +22,9 @@ export default function RootLayout({children}) {
     return (
         <html lang="en">
         <body
-            className={`${geistSans.variable}  antialiased`}
+            className={`${geistSans.variable}  antialiased  px-4 bg-gradient-to-br from-white via-white to-rose-50`}
         >
+        <Navbar/>
         {children}
         <ScrollButton/>
         </body>
