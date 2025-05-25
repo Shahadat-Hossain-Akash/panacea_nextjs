@@ -15,7 +15,7 @@ const categories = [
         bgColor: "bg-fuchsia-100/20"
     },
     {name: "Eye Care", dotColor: "bg-sky-500", textColor: "text-sky-500", bgColor: "bg-sky-100/20"},
-    {name: "Fever & Pain Relief", dotColor: "bg-yellow-500", textColor: "text-yellow-600", bgColor: "bg-yellow-100/20"},
+    {name: "Fever & Pain Relief", dotColor: "bg-yellow-500", textColor: "text-yellow-500", bgColor: "bg-yellow-100/20"},
     {name: "Ayurvedic", dotColor: "bg-emerald-500", textColor: "text-emerald-500", bgColor: "bg-emerald-100/20"},
     {name: "Homeopathy", dotColor: "bg-cyan-500", textColor: "text-cyan-500", bgColor: "bg-cyan-100/20"},
     {name: "Skin Care", dotColor: "bg-rose-400", textColor: "text-rose-400", bgColor: "bg-rose-100/20"},

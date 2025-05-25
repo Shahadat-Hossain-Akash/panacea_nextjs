@@ -9,7 +9,7 @@ const Footer = () => {
 
     return (
         <footer className="w-full py-12 border-t border-black/10">
-            <div className="container">
+            <div className="">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
                     <div>
                         <Link href="/" className="flex items-center gap-2 mb-6" aria-label="MediMarket Home">
