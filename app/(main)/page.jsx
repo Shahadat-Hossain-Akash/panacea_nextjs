@@ -1,11 +1,12 @@
 "use client"
+
 import HeroSection from "@/app/components/HeroSection";
 import Category from "@/app/components/Category";
 import Shop from "@/app/components/Shop";
+import Products from "@/app/components/Product";
 import WhyChooseUs from "@/app/components/WhyUs";
 import Join from "@/app/components/Join";
 import Footer from "@/components/Footer/Footer";
-import Products from "@/app/components/Product";
 
 export default function Home() {
     return (
@@ -20,6 +21,7 @@ export default function Home() {
                 <Join/>
             </main>
             <Footer/>
+
         </div>
     );
 }
