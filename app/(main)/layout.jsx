@@ -1,3 +1,4 @@
+"use client"
 import Navbar from "@/components/Navbar/Navbar";
 import ScrollButton from "@/components/shared/ScrollButton";
 

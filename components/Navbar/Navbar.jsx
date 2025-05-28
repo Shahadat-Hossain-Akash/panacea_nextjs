@@ -1,20 +1,22 @@
 import Link from "next/link";
 import {Button} from "@/components/ui/button";
-import {Menu} from "lucide-react";
+import {Menu, ShoppingBag} from "lucide-react";
+import {useCart} from "@/context/CartContext";
 
 // Dummy user (replace with actual auth logic)
 const user = undefined;
 
-const navLinks = ["Pharmacies", "Products", "About", "Contact Us"];
+const navLinks = ["Pharmacies", "Products", "About", "Contact"];
 
-const Navbar = () => (
-    <header className="w-full py-6 sticky top-0 z-50 backdrop-blur-md bg-white/30">
+const Navbar = () => {
+    const {openCart} = useCart();
+    return (<header className="w-full py-6 sticky top-0 z-50 backdrop-blur-md bg-white/30">
         <div className="flex items-center justify-between px-4 md:px-8">
             <Link href="/" className="flex items-center gap-2" aria-label="Panacea">
                 <span className="text-xl font-light">Panacea</span>
             </Link>
 
-            <div className="flex items-center gap-8">
+            <div className="flex items-center justify-center gap-8">
                 <nav className="hidden md:flex gap-8">
                     {navLinks.map((link) => (
                         <Link
@@ -26,6 +28,13 @@ const Navbar = () => (
                         </Link>
                     ))}
                 </nav>
+                <button
+                    onClick={openCart}
+                    aria-label="Open cart"
+                    className="relative flex items-center justify-center rounded-lg hover:bg-zinc-50 w-full h-full p-2"
+                >
+                    <ShoppingBag className={"text-gray-700 hover:text-black/90 size-6 shrink-0"}/>
+                </button>
 
                 {user ? (
                     <div className="hidden md:flex items-center gap-4">
@@ -59,8 +68,7 @@ const Navbar = () => (
                 </Button>
             </div>
         </div>
-    </header>
-
-);
+    </header>)
+}
 
 export default Navbar;

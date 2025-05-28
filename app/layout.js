@@ -1,5 +1,6 @@
 import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
+import {CartProvider} from "@/context/CartContext";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -22,9 +23,9 @@ export default function RootLayout({children}) {
         <body
             className={`${geistSans.variable}  antialiased  px-4 bg-gradient-to-br from-white via-white to-rose-50`}
         >
-        {/*<Navbar/>*/}
-        {children}
-        {/*<ScrollButton/>*/}
+        <CartProvider>
+            {children}
+        </CartProvider>
         </body>
         </html>
     );

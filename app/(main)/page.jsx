@@ -7,11 +7,11 @@ import Products from "@/app/components/Product";
 import WhyChooseUs from "@/app/components/WhyUs";
 import Join from "@/app/components/Join";
 import Footer from "@/components/Footer/Footer";
+import CartDrawer from "@/components/drawer/CartDrawer";
 
 export default function Home() {
     return (
         <div className="flex min-h-screen flex-col">
-
             <main>
                 <HeroSection/>
                 <Category/>
@@ -21,7 +21,9 @@ export default function Home() {
                 <Join/>
             </main>
             <Footer/>
-
+            <CartDrawer>
+                Cart
+            </CartDrawer>
         </div>
     );
 }
