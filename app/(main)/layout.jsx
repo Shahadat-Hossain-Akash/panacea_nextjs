@@ -9,9 +9,7 @@ export default function MainLayout({children}) {
             <Navbar/>
             {children}
             <ScrollButton/>
-            <CartDrawer>
-                Cart
-            </CartDrawer>
+            <CartDrawer/>
         </>
     );
 }

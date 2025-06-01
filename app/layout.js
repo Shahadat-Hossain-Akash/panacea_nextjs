@@ -21,7 +21,7 @@ export default function RootLayout({children}) {
     return (
         <html lang="en">
         <body
-            className={`${geistSans.variable}  antialiased  px-4 bg-gradient-to-br from-white via-white to-rose-50`}
+            className={`${geistSans.variable}  antialiased  px-4 bg-gradient-to-br from-white via-white to-rose-50/50`}
         >
         <CartProvider>
             {children}

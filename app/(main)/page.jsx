@@ -20,9 +20,6 @@ export default function Home() {
                 <Join/>
             </main>
             <Footer/>
-            {/*<CartDrawer>*/}
-            {/*    Cart*/}
-            {/*</CartDrawer>*/}
         </div>
     );
 }
